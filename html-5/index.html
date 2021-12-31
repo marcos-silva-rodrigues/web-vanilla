@@ -4,9 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="keywords" content="HTML5,tips,courses">
+  <meta name="description" content="Learning to work with HTML5">
+  <meta name="author" content="Marcos Silva">
+  <meta name="robots" content="index,follow">
+
   <title>Document</title>
+
+  <script>
+    document.createElement("myTag");
+  </script>
+
+  <style>
+    header,
+    section,
+    footer,
+    nav,
+    main,
+    article,
+    figure {
+      display: block;
+    }
+
+    myTag {
+      display: block;
+      background-color: #ddd;
+      padding: 50px;
+      font-size: 30px;
+    }
+  </style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
 </head>
 <body>
-  
+  <myTag>That's my tag</myTag>
 </body>
 </html>
