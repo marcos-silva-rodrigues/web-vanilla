@@ -16,30 +16,76 @@
     document.createElement("myTag");
   </script>
 
-  <style>
-    header,
-    section,
-    footer,
-    nav,
-    main,
-    article,
-    figure {
-      display: block;
-    }
-
-    myTag {
-      display: block;
-      background-color: #ddd;
-      padding: 50px;
-      font-size: 30px;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 <body>
-  <myTag>That's my tag</myTag>
+  <header>
+    <h1>Main title</h1>
+    <h2>Secondary title</h2>
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <header>
+          <h1>Title of a content</h1>
+          <p>Description of content</p>
+        </header>
+        Here' s an introduction to the of the content ... 
+        <figure>
+          <img src="img/git.jpg" alt="Description of the Figure">
+          <figcaption>
+            Description of the Figure
+          </figcaption>
+        </figure>
+  
+        <footer>
+          <small>
+            <a href="news.html">View more...</a>
+          </small>
+        </footer>
+      </article>
+    </section>
+
+    <aside>
+      <h3>sidebar</h3>
+
+      <ul>
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Marcos Silva</p>
+    <small>&copf; All right reserve</small>
+  </footer>
+  
+
 </body>
 </html>
