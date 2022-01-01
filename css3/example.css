@@ -263,4 +263,33 @@
   display: inline-block;
 }
 
+#textshadow1 {
+  text-shadow: 1px 1px;
+}
+
+#textshadow2 {
+  text-shadow: 1px 1px 4px #000;
+  display: inline-block;
+}
+
+#textshadow3 {
+  text-shadow: 1px 1px 4px #000, 0 0 5px #960A0A;
+}
+
+div.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 25vh;
+  display: inline-block;
+}
+
+div.card header {
+  background-color: #00FF7E;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+}
+
+div.container {
+ padding: 5px;
+}
 
