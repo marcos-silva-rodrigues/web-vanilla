@@ -9,6 +9,7 @@
 @import url(animation.css);
 @import url(images.css);
 @import url(button.css);
+@import url(text-columns.css);
 
 .section-example {
   text-align: center;
