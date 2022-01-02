@@ -5,6 +5,7 @@
 @import url(font-and-text.css);
 @import url(2d.css);
 @import url(3d.css);
+@import url(transition.css);
 
 .section-example {
   text-align: center;
