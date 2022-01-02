@@ -1,0 +1,23 @@
+.print {
+  display: none;
+}
+
+.screen {
+  display: none;
+}
+
+@media print {
+  .print {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: red;
+  }
+
+  .screen {
+    display: block;
+  }
+}

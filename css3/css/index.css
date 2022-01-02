@@ -11,11 +11,13 @@
 @import url(button.css);
 @import url(text-columns.css);
 @import url(resize.css);
+@import url(media-queries.css);
 
 .section-example {
   text-align: center;
   padding-left: 20px;
 }
+
 
 
 
