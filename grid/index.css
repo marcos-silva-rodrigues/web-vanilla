@@ -1,0 +1,86 @@
+#main {
+  display: grid;
+  grid-template-areas:
+    "nav nav" 
+    "sidebar content"
+    "footer footer";
+  gap: 5px;
+  grid-template-columns: 25% 75%;
+  
+}
+
+.grid-item {
+  background: #CCCCCC;
+  padding: 10px;
+}
+
+.nav {
+  grid-area: nav;
+  display: grid;
+  justify-content: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+}
+
+.sidebar > ul {
+  display: grid;
+  list-style: none;
+  padding: 0px 5px;
+}
+
+.sidebar > ul > li {
+  grid-auto-flow: row;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.sidebar > ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.footer {
+  grid-area: footer;
+  display: grid;
+}
+
+.footer .copy {
+  justify-self: start;
+  grid-row: 1;
+}
+
+.footer .year {
+  justify-self: end;
+  grid-row: 1;
+}
+
+.container {
+  display: grid;
+}
+
+.row {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.column {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.form {
+  display: grid;
+  gap: 20px;
+  column-gap: 5px;
+  row-gap: 10px;
+}
