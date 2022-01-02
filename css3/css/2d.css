@@ -7,24 +7,25 @@
   font-size: 30px;
   background-color: #1b6d85;
   color: white;
+  display: inline-block;
 }
 
 .translate {
   -ms-transform: translate(50px,100px); /* IE 9 */
   -webkit-transform: translate(50px,100px); /* Safari */
-  transform: translate(50px,100px);
+  transform: translate(0px,100px);
 }
 
 .rotate {
   -ms-transform: rotate(20deg); /* IE 9 */
   -webkit-transform: rotate(20deg); /* Safari */
-  transform: rotate(20deg);
+  transform: rotate(20deg) ;
 }
 
 .scale {
   -ms-transform: scale(2,3); /* IE 9 */
   -webkit-transform: scale(2,3); /* Safari */
-  transform: scale(2,3);
+  transform: scale(1,2);
 }
 
 .skewX {

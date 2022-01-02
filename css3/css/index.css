@@ -3,6 +3,8 @@
 @import url(gradient.css);
 @import url(shadows.css);
 @import url(font-and-text.css);
+@import url(2d.css);
+@import url(3d.css);
 
 .section-example {
   text-align: center;
