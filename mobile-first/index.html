@@ -34,7 +34,14 @@
   <main class="container">
     <section>
       <div class="row">
-        <img id="image" class="responsive" src="./img/background.jpg" alt="Elefante">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/background.jpg">
+          <source media="(min-width: 992px)" srcset="./img/background-1200.jpg">
+          <source media="(min-width: 768px)" srcset="./img/background-992.jpg">
+          <source media="(min-width: 576px)" srcset="./img/background-768.jpg">
+          <img id="image" class="responsive" src="./img/background-576.jpg" alt="Elefante">
+        </picture>
+        
       </div>
     </section>
     
