@@ -21,6 +21,7 @@
   </header>
 
   <menu>
+    <span id="close-menu">X</span>
     <ul>
       <li><a href="">Home</a></li>
       <li><a href="">Sobre mim</a></li>
@@ -30,38 +31,46 @@
     </ul>
   </menu>
 
-  <main>
+  <main class="container">
     <section>
-      <div>
-        <img src="./img/background.jpg" alt="Elefante">
+      <div class="row">
+        <img id="image" class="responsive" src="./img/background.jpg" alt="Elefante">
       </div>
+    </section>
+    
+    <section class="row">
 
-      <div>
+      <div class="col">
         <h3>Primeiro Assunto</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut bibendum lectus, in ultrices nisl. Ut vitae
           mi ultrices, vestibulum est eget, elementum nulla. Nulla consectetur dapibus ex, at fermentum tellus rutrum
           id. Curabitur auctor maximus dui, eget condimentum leo posuere at. Aliquam cursus blandit placerat.</p>
       </div>
 
-      <div>
+      <div class="col">
         <h3>Segundo Assunto</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut bibendum lectus, in ultrices nisl. Ut vitae
           mi ultrices, vestibulum est eget, elementum nulla. Nulla consectetur dapibus ex, at fermentum tellus rutrum
           id. Curabitur auctor maximus dui, eget condimentum leo posuere at. Aliquam cursus blandit placerat.</p>
       </div>
 
-      <div>
+      <div class="col">
         <h3>Terceiro Assunto</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut bibendum lectus, in ultrices nisl. Ut vitae
           mi ultrices, vestibulum est eget, elementum nulla. Nulla consectetur dapibus ex, at fermentum tellus rutrum
           id. Curabitur auctor maximus dui, eget condimentum leo posuere at. Aliquam cursus blandit placerat.</p>
       </div>
 
+    </section>
+
+    <section>
       <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/m1NvXu0Rb4c" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+        <div class="video-responsive">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/m1NvXu0Rb4c" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
     </section>
   </main>
@@ -69,6 +78,23 @@
   <footer>
     <small>by Marcos</small>
   </footer>
+  <script>
+    const menuTag = document.getElementsByTagName('menu');
+
+    const menuIcon = document.getElementsByClassName('menu-icon');
+    const closeMenu = document.getElementById('close-menu');
+
+    menuIcon[0].addEventListener('click',  (e) => {
+      e.preventDefault();
+      menuTag[0].className = 'activated';
+    })
+
+    closeMenu.addEventListener('click',  () => {
+      menuTag[0].className = '';
+    })
+
+    menuTag[0].className = '';
+  </script>
 </body>
 
 </html>

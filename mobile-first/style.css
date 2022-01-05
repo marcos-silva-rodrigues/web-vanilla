@@ -1,3 +1,10 @@
+:root {
+  --cor1: #27ae60;
+  --cor2: #2ECC71;
+  --cor3: #FFFFFF;
+  --cor4: #000000 ;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +18,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Open sans', sans-serif;
+  color: var(--cor4)
 }
 
 h1, h3 {
@@ -23,9 +31,201 @@ h1, h3, p {
   padding: 0px;
 }
 
+#image {
+  margin-bottom: 15px;
+}
+
+main h1, main h3, main p {
+  margin-bottom: 15px;
+}
+
+header {
+  background: var(--cor2);
+  text-align: center;
+  height: 100;
+  line-height: 100px;
+}
+
+header a {
+  color: var(--cor3);
+}
+
+header .menu-icon {
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  width: 35px;
+  height: 28px;
+  display: block;
+  background-color: var(--cor1);
+}
+
+header .menu-icon::before {
+  content: '';
+  display: block;
+  margin: 5px auto;
+  width: 80%;
+  height: 4px;
+  background: var(--cor3);
+  box-shadow: 0 7px 0 0 var(--cor3), 0 15px 0 0 var(--cor3);
+}
+
 menu, menu ul, menu li {
   display: block;
   list-style: none;
   padding: 0px;
   margin: 0px;
+}
+
+menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: var(--cor1);
+  z-index: 1;
+  padding: 45px 0 15px;
+  border-right: 7px solid var(--cor1);
+  transform: translateX(-300px);
+  transition: transform .3s linear;
+}
+
+menu.activated {
+  transform: translateX(0);
+}
+
+#close-menu {
+  color: var(--cor3);
+  font-size: 22px;
+  font-weight: bolder;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+
+  cursor: pointer;
+}
+
+menu li a {
+  display: block;
+  color: var(--cor3);
+  padding: 15px;
+}
+
+menu li a:hover {
+  background-color: var(--cor2);
+}
+
+img.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row:before, .row:after {
+  content: '';
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row .col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row-flex {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-flex {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* @media(min-width: 576px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media(min-width: 768px) {
+  body {
+    background-color: green;
+  }
+} */
+
+@media(min-width: 992px) {
+  header .menu-icon {
+    display: none;
+  }
+
+  menu {
+    position: relative;
+    transform: translateX(0);
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #close-menu {
+    display: none;
+  }
+
+  menu li {
+    display: inline-block;
+  }
+
+  .row .col {
+    width: 33%;
+    float: left;
+  }
+
+  /* body {
+    background-color: yellow;
+  }
+} */
+
+/* @media(min-width: 1200px) {
+  body {
+    background-color: orange;
+  }
+} */
 }
