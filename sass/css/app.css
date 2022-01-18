@@ -1,0 +1,13 @@
+body {
+  background-color: blue;
+  color: pink;
+}
+
+div h1 {
+  color: chartreuse;
+}
+div h1 small {
+  color: red;
+}
+
+/*# sourceMappingURL=app.css.map */

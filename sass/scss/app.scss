@@ -1,0 +1,14 @@
+@use 'var';
+
+body {
+  background-color: var.$primary-color;
+  color: var.$second-color;
+}
+
+div h1  {
+  color: chartreuse;
+
+  small {
+    color: red;
+  }
+}
