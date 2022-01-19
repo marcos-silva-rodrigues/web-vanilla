@@ -4,12 +4,21 @@ body {
 }
 
 div h1 {
-  padding: 5rem;
+  padding-top: 2rem;
+  padding-right: 0;
+  padding-bottom: 2rem;
+  padding-left: 0;
   color: chartreuse;
   border: 1px solid blue;
 }
 div h1 small {
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   color: red;
+  font-size: 1.25rem;
 }
 div:before {
   content: "My Before pseudo element before";

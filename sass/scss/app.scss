@@ -5,6 +5,30 @@
   @return $arg;
 }
 
+@mixin padding($top, $rigth, $bot, $left) {
+  padding-top: $top;
+  padding-right: $rigth;
+  padding-bottom: $bot;
+  padding-left: $left;
+}
+
+@mixin transform ($props) {
+  transform: $props;
+  -moz-transform: $props;
+  -webkit-transform: $props;
+  -o-transform: $props;
+  -ms-transform: $props;
+}
+
+@function setFontResp($fontSize) {
+  $fontSizeRem: calc($fontSize / 16px);
+  @return $fontSizeRem * 1rem;
+}
+
+@mixin setFontSize($size) {
+  font-size: setFontResp($size);
+}
+
 body {
   @if var.$type == dark {
     background-color: var.$primary-color;
@@ -17,11 +41,14 @@ body {
 div {
 
   h1 {
-    padding: calc((20rem - 10rem) / 2);
+    @include padding(2rem, 0, 2rem, 0);
     color: chartreuse;
     border: setBorder(1px solid blue);
+
     small {
+      @include transform(rotate(90deg));
       color: red;
+      @include setFontSize(20px);
     }
   }
 
