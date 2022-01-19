@@ -1,14 +1,29 @@
+// @import 'var'; -> outra forma de importar
 @use 'var';
 
 body {
-  background-color: var.$primary-color;
+  @if var.$type == dark {
+    background-color: var.$primary-color;
+  } @else {
+    background-color: var.$primary-color-light;
+  }
   color: var.$second-color;
 }
 
-div h1  {
-  color: chartreuse;
+div {
 
-  small {
-    color: red;
+  h1 {
+    padding: calc((20rem - 10rem) / 2);
+    color: chartreuse;
+    
+    small {
+      color: red;
+    }
   }
+
+  &:before {
+    $text: 'before';
+    content: "My Before pseudo element " + $text;
+  }
+
 }

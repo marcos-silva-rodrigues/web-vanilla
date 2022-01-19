@@ -4,10 +4,14 @@ body {
 }
 
 div h1 {
+  padding: 5rem;
   color: chartreuse;
 }
 div h1 small {
   color: red;
+}
+div:before {
+  content: "My Before pseudo element before";
 }
 
 /*# sourceMappingURL=app.css.map */
