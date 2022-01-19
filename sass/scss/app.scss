@@ -1,6 +1,10 @@
 // @import 'var'; -> outra forma de importar
 @use 'var';
 
+@function setBorder($arg...) {
+  @return $arg;
+}
+
 body {
   @if var.$type == dark {
     background-color: var.$primary-color;
@@ -15,7 +19,7 @@ div {
   h1 {
     padding: calc((20rem - 10rem) / 2);
     color: chartreuse;
-    
+    border: setBorder(1px solid blue);
     small {
       color: red;
     }
