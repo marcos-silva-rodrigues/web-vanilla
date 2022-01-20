@@ -1,0 +1,31 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+img {
+  border-style: none;
+}
+
+button [type="button"],
+button [type="submit"]
+button [type="reset"] {
+  -webkit-apperance: button;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[hidden] {
+  display: none;
+}
