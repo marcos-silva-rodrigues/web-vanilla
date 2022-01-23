@@ -19,15 +19,20 @@ body.light-theme .btn {
   color-scheme: dark light;
 }
 
+body {
+  --bg-color: #000000;
+  background-color: var(--bg-color);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: blue;
+    --bg-color: #FFF000;
   }
 }
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: darksalmon;
+    --bg-color: darksalmon;
   }
 }
 
