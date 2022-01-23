@@ -1,18 +1,18 @@
-/* body.dark-theme {
-  background-color: #000000;
+/* body {
+  background-color: #FFFFFF;
 }
 
-body.light-theme {
-  background-color: #FFFFFF;
+body .btn {
+  background-color: violet;
+  
+}
+
+body.dark-theme {
+  background-color: #000000;
 }
 
 body.dark-theme .btn {
   background-color: aqua;
-}
-
-body.light-theme .btn {
-  background-color: violet;
-
 } */
 
 :root {
