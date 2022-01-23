@@ -1,4 +1,4 @@
-/* body {
+body {
   background-color: #FFFFFF;
 }
 
@@ -13,9 +13,9 @@ body.dark-theme {
 
 body.dark-theme .btn {
   background-color: aqua;
-} */
+}
 
-:root {
+/* :root {
   color-scheme: dark light;
 }
 
@@ -35,4 +35,4 @@ body {
     --bg-color: darksalmon;
   }
 }
-
+ */
