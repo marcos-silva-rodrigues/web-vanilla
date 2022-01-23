@@ -1,0 +1,15 @@
+body.dark-theme {
+  background-color: #000000;
+}
+
+body.light-theme {
+  background-color: #FFFFFF;
+}
+
+body.dark-theme .btn {
+  background-color: aqua;
+}
+
+body.light-theme .btn {
+  background-color: violet;
+}
