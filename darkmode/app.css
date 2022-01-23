@@ -1,4 +1,4 @@
-body.dark-theme {
+/* body.dark-theme {
   background-color: #000000;
 }
 
@@ -12,4 +12,22 @@ body.dark-theme .btn {
 
 body.light-theme .btn {
   background-color: violet;
+
+} */
+
+:root {
+  color-scheme: dark light;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: darksalmon;
+  }
+}
+
