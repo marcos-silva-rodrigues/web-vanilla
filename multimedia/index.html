@@ -7,16 +7,63 @@
 
 </head>
 <body>
-<header class="navbar-header">
+  <header class="navbar-header">
     <h1 class="navbar-brand">Multimedia</h1>
-</header>
-<section>
+  </header>
+  <section>
     <h1 class="title">Introduction</h1>
-</section>
-<section>
+  </section>
 
-</section>
+  <section>
+    <div class="row text-center">
+      <video width="560" height="350" controls autoplay muted>
+        <source src="./media/introcss3.mp4">
+        Your browser does not support the video tag
+      </video>
+    </div>
+  </section>
 
+  <br/>
+  <br/>
 
+  <section>
+    <h1 class="title">Atributos</h1>
+  </section>
+
+  <section>
+    <div class="row text-center">
+      <video width="560" height="350" controls muted loop poster="./img/video-poster.jpg">
+        <source src="./media/introcss3.mp4">
+        Your browser does not support the video tag
+      </video>
+    </div>
+  </section>
+
+  <br/>
+  <br/>
+
+  <section>
+    <h1 class="title">Controles do video</h1>
+  </section>
+
+  <section>
+    <div class="row text-center">
+      <video id="video" width="560" height="350" poster="./img/video-poster.jpg">
+        <source src="./media/introcss3.mp4">
+        Your browser does not support the video tag
+      </video>
+    </div>
+    <div class="row text-center" id="video_controls">
+      <button>play</button>
+      <button>pause</button>
+      <button>stop</button>
+      <input type="range" id="volume" min="0" max="100" value="100" />
+      <button>muted</button>
+      <button>full</button>
+    </div>
+    <br>
+  </section>
+
+  <script type="module" src="./js/index.js"></script>
 </body>
 </html>
