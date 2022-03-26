@@ -64,6 +64,95 @@
     <br>
   </section>
 
+  <br/>
+  <br/>
+
+  <section>
+    <h1 class="title">Audio</h1>
+  </section>
+
+  <section>
+    <div class="row text-center">
+      <audio id="audio" width="560" height="350" controls>
+        <source src="./media/introcss3.mp4">
+        Your browser does not support the video tag
+      </audio>
+    </div>
+  </section>
+
+  <br/>
+  <br/>
+
+  <section>
+    <h1 class="title">Iframes</h1>
+  </section>
+
+  <section>
+    <div class="row text-center">
+      <iframe
+        id="frame"
+        width="560"
+        height="350"
+        src="https://www.youtube.com/embed/Bq2XTGzV8yc?autoplay=0&mute=1&controls=1&modestbranding=1"
+        allow="autoplay"
+      >
+      </iframe>
+    </div>
+  </section>
+
+  <br/>
+  <br/>
+
+  <section>
+    <h1 class="title">Playlist</h1>
+  </section>
+
+  <section>
+    <div class="row text-center">
+      <iframe
+        id="frame"
+        width="560"
+        height="350"
+        src="https://www.youtube.com/embed?listType=playlist&list=PL5aY_NrL1rjucQqO21QH8KclsLDYu1BIg&index=1"
+        allow="autoplay"
+      >
+      
+      </iframe>
+    </div>
+  </section>
+
+  <br/>
+  <br/>
+
+  <section>
+    <h1 class="title">Buscar</h1>
+  </section>
+
+  <section>
+    <div class="row text-center">
+      <input onkeyup="search();" type="text" id="search" placeholder="Search">
+    </div>
+    <div class="row text-center">
+      <iframe id="iframeId" width="560" height="315" style="display: none;"
+              src="">
+      </iframe>
+    </div>
+  </section>
+
   <script type="module" src="./js/index.js"></script>
+  <script>
+    function search(){
+      const search = document.getElementById("search").value;
+
+      if (search === "") {
+          document.getElementById("iframeId").style.display = "none";
+      } else {
+          document.getElementById("iframeId").style.display = "inline-block";
+      }
+  
+      const url = "http://www.youtube.com/embed?listType=search&list=";
+      document.getElementById("iframeId").src = `${url}${search}`;
+    }
+  </script>
 </body>
 </html>
