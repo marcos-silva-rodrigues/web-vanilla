@@ -42,6 +42,14 @@ class VideoController {
     const newVolumeValue = serializeVolumeValue(vol);
     this.ref.volume = newVolumeValue;
   }
+
+  registerVideoEvent(eventName, cb) {
+    this.ref[eventName] = () => cb(
+      this.ref.currentTime,
+      this.ref?.volume,
+    );
+  }
+
 }
 
 const VideoAction = {
