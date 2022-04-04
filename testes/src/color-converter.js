@@ -1,5 +1,5 @@
 module.exports = {
-  toHex: (rgb) => {
+  toHex(rgb) {
     const arrayColorsConverted = [
       rgb[0].toString(16),
       rgb[1].toString(16),
@@ -16,7 +16,7 @@ module.exports = {
 
     return hexValue;
   },
-  toRgb: (hex) => {
+  toRgb(hex) {
     if (hex[0] === '#') hex.replace('#', '');
     const red = parseInt(hex.substring(0, 2), 16);
     const green = parseInt(hex.substring(2, 4), 16);
